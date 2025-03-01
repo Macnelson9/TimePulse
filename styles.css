@@ -23,6 +23,355 @@
   --Pale-Blue: hsl(236, 100%, 87%);
 }
 
+body {
+  font-family: 'Rubik', sans-serif;
+  margin: 0 auto;
+  background: var(--Very-dark-blue);
+  color: #fff;
+}
+
+img {
+  max-width: 100%;
+  height: 100%;
+}
+
+#navList {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-top: 0;
+  padding: 0 10px;
+  white-space: nowrap;
+}
+
+#navList img {
+  border-radius: 100%;
+  width: 60%;
+}
+
+#navList li {
+  font-size: 0.75rem;
+  font-weight: 600;
+  list-style: none;
+}
+
+#main {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  margin: 0 auto;
+  width: 85%;
+  max-width: 375px;
+}
+
+#profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#profile-report {
+  background: var(--Blue);
+  border-radius: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  padding: 3rem 2rem;
+  width: 100%;
+}
+
+#profile-report img {
+  border: 3px white solid;
+  border-radius: 100%;
+  height: 80px;
+  width: 80px;
+}
+
+#profile-report p {
+  color: var(--Pale-Blue);
+  font-size: 1rem;
+  white-space: nowrap;
+}
+
+#profileName {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.timeLapse {
+  position: relative;
+  top: -20px;
+  background: var(--Dark-blue);
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  width: 100%;
+  z-index: -1;
+}
+
+.timeLapse ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  margin: 3rem auto;
+  margin-bottom: 2rem;
+  padding: 0 1.5rem;
+  width: 100%;
+}
+
+.timeLapse li {
+  color: var(--Desaturated-blue);
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+#work--header,
+#play--header,
+#study--header,
+#exercise--header,
+#social--header,
+#selfCare--header {
+  background: var(--Light-red-work);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 1.5rem;
+  overflow: hidden;
+}
+
+#play--header {
+  background: var(--Soft-blue-play);
+}
+#study--header {
+  background: var(--Light-red-study);
+}
+#exercise--header {
+  background: var(--Lime-green-exercise);
+}
+#social--header {
+  background: var(--Violet-social);
+}
+#selfCare--header {
+  background: var(--Soft-orange-self-care);
+}
+
+#work--header img,
+#play--header img,
+#study--header img,
+#exercise--header img,
+#social--header img,
+#selfCare--header img {
+  position: relative;
+  width: 30%;
+  top: -10px;
+}
+
+#work--summary,
+#play--summary,
+#study--summary,
+#selfCare--summary,
+#exercise--summary,
+#social--summary {
+  position: relative;
+  background: var(--Dark-blue);
+  padding: 1.5rem;
+  border-radius: 20px;
+  top: -50px;
+  z-index: 2;
+}
+
+#exercise--summary {
+  top: -20px;
+}
+
+#social--summary {
+  top: -80px;
+}
+
+#work--summary--header,
+#play--summary--header,
+#study--summary--header,
+#exercise--summary--header,
+#social--summary--header,
+#selfCare--summary--header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#work--summary--header h3,
+#play--summary--header h3,
+#study--summary--header h3,
+#exercise--summary--header h3,
+#social--summary--header h3,
+#selfCare--summary--header h3 {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+#work--summary--header i,
+#play--summary--header i,
+#study--summary--header i,
+#exercise--summary--header i,
+#social--summary--header i,
+#selfCare--summary--header i {
+  color: var(--Pale-Blue);
+  font-size: 2rem;
+}
+
+#work--summary--time,
+#play--summary--time,
+#study--summary--time,
+#exercise--summary--time,
+#social--summary--time,
+#selfCare--summary--time {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#work--summary--time p,
+#play--summary--time p,
+#study--summary--time p,
+#exercise--summary--time p,
+#social--summary--time p,
+#selfCare--summary--time p {
+  font-size: 2.5rem;
+  font-weight: 300;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+#work--summary--time p:nth-child(2),
+#play--summary--time p:nth-child(2),
+#study--summary--time p:nth-child(2),
+#exercise--summary--time p:nth-child(2),
+#social--summary--time p:nth-child(2),
+#selfCare--summary--time p:nth-child(2) {
+  color: var(--Pale-Blue);
+  font-size: 1rem;
+}
+
+#activity--exercise {
+  margin-bottom: 30px;
+}
+
+#activity--selfCare {
+  margin-top: -30px;
+}
+
+/* Media queries */
+@media (min-width: 1000px) {
+  #main {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 20px;
+    max-width: 1200px;
+  }
+
+  #navList {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+    margin: 0 auto;
+    width: 80%;
+  }
+
+  #navList li:nth-child(1) {
+    margin-right: 40rem;
+  }
+
+  #profile {
+    justify-content: flex-start;
+    grid-row: 1 / -1;
+  }
+
+  #profile-report {
+    flex-direction: column;
+    gap: 20px;
+    padding: 4.5rem 2rem;
+  }
+
+  #profile-report img,
+  #profile-report p {
+    align-self: flex-start;
+  }
+
+  #profileName {
+    font-size: 3rem;
+    white-space: wrap;
+  }
+
+  .timeLapse {
+    top: -40px;
+  }
+
+  .timeLapse ul {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    margin-top: 60px;
+    padding: 0 2rem;
+  }
+
+  #activities {
+    grid-column: 2 / 3;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  #exercise--header {
+    height: 103px;
+  }
+
+  #work--summary--time,
+  #play--summary--time,
+  #study--summary--time,
+  #exercise--summary--time,
+  #social--summary--time,
+  #selfCare--summary--time {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  #work--summary,
+  #play--summary,
+  #study--summary,
+  #selfCare--summary {
+    top: -30px;
+  }
+
+  #exercise--summary {
+    top: -60px;
+  }
+
+  #social--summary {
+    top: -55px;
+  }
+
+  #activity--selfCare {
+    margin-top: 0px;
+  }
+
+  #activity--exercise {
+    margin-bottom: 0px;
+  }
+
+  #activity--play {
+    margin: 0;
+  }
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;

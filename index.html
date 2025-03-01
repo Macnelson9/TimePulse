@@ -16,87 +16,148 @@
     ></script>
     <script defer src="script.js"></script>
     <link rel="stylesheet" href="styles.css" />
-    <title>TimePulse | See Your Rhythm</title>
+    <title>TimePulse || See Your Rhythm</title>
   </head>
   <body>
-    Report for Jeremy Robson Daily Weekly Monthly Work 5hrs
-    <!-- daily -->
-    Previous - 7hrs
-    <!-- daily -->
-    32hrs
-    <!-- weekly -->
-    Previous - 36hrs
-    <!-- weekly -->
-    103hrs
-    <!-- monthly -->
-    Previous - 128hrs
-    <!-- monthly -->
+    <div id="body-container">
+      <header>
+        <nav id="nav" aria-roledescription="navigation" role="navigation">
+          <ul id="navList">
+            <li>
+              <img
+                src="./images/TimePulseLogoDark.png"
+                id="timePulseLogo"
+                alt="TimePulse-logo"
+              />
+            </li>
+            <li>Dashboard</li>
+            <li>Sign up</li>
+            <li>Contact Us</li>
+          </ul>
+        </nav>
+      </header>
 
-    Play 1hr
-    <!-- daily -->
-    Previous - 2hrs
-    <!-- daily -->
-    10hrs
-    <!-- weekly -->
-    Previous - 8hrs
-    <!-- weekly -->
-    23hrs
-    <!-- monthly -->
-    Previous - 29hrs
-    <!-- monthly -->
+      <main id="main">
+        <section id="profile">
+          <div id="profile-report">
+            <img src="./images/image-jeremy.png" alt="profile-image" />
+            <p>Report for <br /><span id="profileName">Jeremy Robson</span></p>
+          </div>
+          <div class="timeLapse">
+            <ul>
+              <li id="timeLapse--link">Daily</li>
+              <li id="timeLapse--link">Weekly</li>
+              <li id="timeLapse--link">Monthly</li>
+            </ul>
+          </div>
+        </section>
 
-    Study 0hrs
-    <!-- daily -->
-    Previous - 1hr
-    <!-- daily -->
-    4hrs
-    <!-- weekly -->
-    Previous - 7hrs
-    <!-- weekly -->
-    13hrs
-    <!-- monthly -->
-    Previous - 19hrs
-    <!-- monthly -->
-
-    Exercise 1hr
-    <!-- daily -->
-    Previous - 1hr
-    <!-- daily -->
-    4hrs
-    <!-- weekly -->
-    Previous - 5hrs
-    <!-- weekly -->
-    11hrs
-    <!-- monthly -->
-    Previous - 18hrs
-    <!-- monthly -->
-
-    Social 1hr
-    <!-- daily -->
-    Previous - 3hrs
-    <!-- daily -->
-    5hrs
-    <!-- weekly -->
-    Previous - 10hrs
-    <!-- weekly -->
-    21hrs
-    <!-- monthly -->
-    Previous - 23hrs
-    <!-- monthly -->
-
-    Self Care 0hrs
-    <!-- daily -->
-    Previous - 1hr
-    <!-- daily -->
-    2hrs
-    <!-- weekly -->
-    Previous - 2hrs
-    <!-- weekly -->
-    7hrs
-    <!-- monthly -->
-    Previous - 11hrs
-    <!-- monthly -->
-
+        <section id="activities">
+          <!-- Work Activity -->
+          <div id="activity--work">
+            <div id="work--header">
+              <img src="./images/icon-work.svg" alt="work activity icon" />
+            </div>
+            <div id="work--summary">
+              <div id="work--summary--header">
+                <h3>Work</h3>
+                <i class="fas fa-ellipsis-h"></i>
+              </div>
+              <div id="work--summary--time">
+                <p>32hrs</p>
+                <p id="work--summary--previous">Last Week - 36hrs</p>
+              </div>
+            </div>
+          </div>
+          <!-- Play Activity -->
+          <div id="activity--play">
+            <div id="play--header">
+              <img src="./images/icon-play.svg" alt="play activity icon" />
+            </div>
+            <div id="play--summary">
+              <div id="play--summary--header">
+                <h3>Play</h3>
+                <i class="fas fa-ellipsis-h"></i>
+              </div>
+              <div id="play--summary--time">
+                <p>10hrs</p>
+                <p id="play--summary--previous">Last Week - 8hrs</p>
+              </div>
+            </div>
+          </div>
+          <!-- Study Activity -->
+          <div id="activity--study">
+            <div id="study--header">
+              <img src="./images/icon-study.svg" alt="study activity icon" />
+            </div>
+            <div id="study--summary">
+              <div id="study--summary--header">
+                <h3>Study</h3>
+                <i class="fas fa-ellipsis-h"></i>
+              </div>
+              <div id="study--summary--time">
+                <p>4hrs</p>
+                <p id="study--summary--previous">Last Week - 7hrs</p>
+              </div>
+            </div>
+          </div>
+          <!-- Exercise Activity -->
+          <div id="activity--exercise">
+            <div id="exercise--header">
+              <img
+                src="./images/icon-exercise.svg"
+                alt="exercise activity icon"
+              />
+            </div>
+            <div id="exercise--summary">
+              <div id="exercise--summary--header">
+                <h3>Exercise</h3>
+                <i class="fas fa-ellipsis-h"></i>
+              </div>
+              <div id="exercise--summary--time">
+                <p>4hrs</p>
+                <p id="exercise--summary--previous">Last Week - 5hrs</p>
+              </div>
+            </div>
+          </div>
+          <!-- Social Activity -->
+          <div id="activity--social">
+            <div id="social--header">
+              <img src="./images/icon-social.svg" alt="social activity icon" />
+            </div>
+            <div id="social--summary">
+              <div id="social--summary--header">
+                <h3>Social</h3>
+                <i class="fas fa-ellipsis-h"></i>
+              </div>
+              <div id="social--summary--time">
+                <p>5hrs</p>
+                <p id="social--summary--previous">Last Week - 10hrs</p>
+              </div>
+            </div>
+          </div>
+          <!-- Self Care Activity -->
+          <div id="activity--selfCare">
+            <div id="selfCare--header">
+              <img
+                src="./images/icon-self-care.svg"
+                alt="self-care activity icon"
+              />
+            </div>
+            <div id="selfCare--summary">
+              <div id="selfCare--summary--header">
+                <h3>Self Care</h3>
+                <i class="fas fa-ellipsis-h"></i>
+              </div>
+              <div id="selfCare--summary--time">
+                <p>2hrs</p>
+                <p id="selfCare--summary--previous">Last Week - 2hrs</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
     <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
