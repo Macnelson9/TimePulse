@@ -14,9 +14,23 @@ const socialHrs = document.querySelector('.social--summary--hrs');
 const socialSpan = document.querySelector('.social--summary--previous');
 const selfCareHrs = document.querySelector('.selfCare--summary--hrs');
 const selfCareSpan = document.querySelector('.selfCare--summary--previous');
+const url = './data.json';
+
+
+const fetchData = function () {
+    fetch(url).then(response => {
+        if (!response.ok) {
+            throw new Error(`Something went wrong! Status: ${response.status}`)
+        }
+
+        return response.json();
+    }).then(data => console.log(data));
+}
 
 timeLapseLinks.forEach(el => {
     el.addEventListener('click', function () {
-        alert(`${el.textContent} was clicked!!`);
+        if (el.textContent === 'Daily') {
+            
+        }
     });
 });

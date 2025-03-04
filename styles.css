@@ -70,6 +70,9 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  z-index: 1;
 }
 
 #profile-report {
@@ -103,13 +106,13 @@ img {
 }
 
 .timeLapse {
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
   position: relative;
   top: -20px;
   background: var(--Dark-blue);
-  border-bottom-right-radius: 20px;
-  border-bottom-left-radius: 20px;
   width: 100%;
-  z-index: -1;
+  z-index: 1;
 }
 
 .timeLapse ul {
@@ -301,6 +304,9 @@ img {
     padding-bottom: 2.7rem;
     padding-left: 1.5rem;
     padding-right: 5rem;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    z-index: 10;
   }
 
   #profile-report img,
